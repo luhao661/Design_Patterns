@@ -2,15 +2,20 @@
 #define STRATEGY_H
  
 #include <string>
-#include <math.h>
+#include <cmath>
  
-//父类抽象类
+//父类抽象基类
 class CashSuper
 {
 public:
 	virtual double acceptCash(double money)=0;
 };
  
+//策略模式
+//CashNormal、CashReturn、CashRebate
+//是三个具体策略，即具体的算法
+
+
 //子类：正常付费类型
 class CashNormal:public CashSuper
 {
@@ -20,7 +25,7 @@ public:
 		return money;
 	}
 };
- 
+
 //子类：返现类型
 class CashReturn:public CashSuper
 {

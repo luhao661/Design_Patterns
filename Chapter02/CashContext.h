@@ -2,7 +2,8 @@
 #define CASHCONTEXT_H
  
 #include "Strategy.h"
- 
+
+//工厂类
 class CashContext
 {
 private:
@@ -30,6 +31,7 @@ public:
 		default:;
 		}
 	}
+	
 	~CashContext()
 	{
 		if(cs!=NULL)
