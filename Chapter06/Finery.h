@@ -20,7 +20,7 @@ public:
 			component->Show();
 	}
 };
- 
+
 //下面是一系列ConcreteDecorator类
 class TShirts:public Finery
 {
