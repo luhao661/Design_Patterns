@@ -41,15 +41,19 @@ int main()
 	dtx->Decorator(kk);
 	
 	//***注***
-	
+	//先显示“大T恤  ”，然后调用基类的方法Show()
+	//Show()内使用指针component指向的派生类(即kk指向的派生类)的
+	//Show()方法，而此方法又再次调用基类的Show()方法，以此类推
 	dtx->Show();
  
 	std::cout<<"第二种装扮："<<std::endl;
  
 	LeatherShoes* px=NULL;
 	px=new LeatherShoes();
+
 	Tie* ld=NULL;
 	ld=new Tie();
+	
 	Suit* xz=NULL;
 	xz=new Suit();
  
